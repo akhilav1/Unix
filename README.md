@@ -1,8 +1,8 @@
-#UNIX Assignment
+# UNIX Assignment
 
-##Data Inspection
+# Data Inspection
 
-###Attributes of fang_et_al_genotypes
+# Attributes of fang_et_al_genotypes
 
 here is my snippet of code used for data inspection
 
@@ -19,7 +19,7 @@ By inspecting this file I learned that:
  3. 984 columns
 
 
-###Attributes of snp_position.txt
+# Attributes of snp_position.txt
 
 here is my snippet of code used for data inspection
 
@@ -37,9 +37,9 @@ By inspecting this file I learned that:
 3. 984 lines
 
 
-##Data Processing
+# Data Processing
 
-###Maize Data
+# Maize Data
 For extracting data
 
 code to examine column 3 of fang_et al
@@ -54,17 +54,17 @@ awk -F "\t" '$3 ~ /Group|ZMMIL|ZMMLR|ZMMMR/' fang _et _al _genotypes.txt | cut -
 (head -n 1 transposed _maizegen.txt && tail -n +2 transposed _maizegen.txt |sort -k1,1) > sort _transposed _maizegen.txt
 
 
-###Teosinte Data
+# Teosinte Data
 for extracting data
 
 awk -F "\t" '$3 ~ /Group|ZMPBA|ZMPIL|ZMMPJA/' snp _position.txt | cut -f 1,4-986 > teosintegen.txt
 
 
-#for sorting after transposition 
+# for sorting after transposition 
 
 (head -n 1 transposed _teosintegen.txt && tail -n +2 transposed _teosintegen.txt |sort -k1,1) > sort _transposed _teosintegen.txt
 
-#To get column 1,3,4 in snp_position  
+ To get column 1,3,4 in snp_position  
 cut -f 1,3,4 snp _position.txt > cut _snp _position.txt
 
 # Sort without header
