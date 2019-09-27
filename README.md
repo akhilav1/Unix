@@ -68,7 +68,7 @@ awk -F "\t" '$3 ~ /Group|ZMPBA|ZMPIL|ZMMPJA/' snp _position.txt | cut -f 1,4-986
 cut -f 1,3,4 snp _position.txt > cut _snp _position.txt
 
 # Sort without header
-(head -n 1 cut _snp _position.txt && tail -n +2 cut _snp _ posiion.txt |sort -k1,1) > sort _cut _snp _position.txt
+(head -n 1 cut _snp _position.txt && tail -n +2 cut _snp _ position.txt |sort -k1,1) > sort _cut _snp _position.txt
 
 # To Join files
 join -1 1 -2 1 --header sort _cut _snp _position.txt -t $'\t' sort _transposed _teosintegen.txt >joined _teosintegen.txt
