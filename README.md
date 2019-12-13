@@ -6,11 +6,11 @@
 
 here is my snippet of code used for data inspection
 
-$ du -h fang_et_al_genotypes.txt for file size
+$ du -h fang_et_al_genotypes.txt #for file size
 
-$ awk -F "\t" '{print NF; exit}' fang_et_al_genotypes.txt for number of columns
+$ awk -F "\t" '{print NF; exit}' fang_et_al_genotypes.txt #for number of columns
 
-$ wc -l fang_et_al_genotypes.txt for number of lines
+$ wc -l fang_et_al_genotypes.txt #for number of lines
 
 By inspecting this file I learned that:
 
@@ -23,11 +23,11 @@ By inspecting this file I learned that:
 
 here is my snippet of code used for data inspection
 
-du -h snp_position.txt for file size
+du -h snp_position.txt #for file size
 
-awk -F "\t" '{print NF; exit}' snp_position.txt for columns
+awk -F "\t" '{print NF; exit}' snp_position.txt #for columns
 
-wc -l snp_position.txt for number of lines
+wc -l snp_position.txt #for number of lines
 
 
 By inspecting this file I learned that:
